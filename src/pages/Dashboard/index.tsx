@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useEffect } from 'react';
 import income from '../../assets/income.svg';
 import outcome from '../../assets/outcome.svg';
 import total from '../../assets/total.svg';
-
-import api from '../../services/api';
-
 import Header from '../../components/Header';
+import { Card, CardContainer, Container, TableContainer } from './styles';
 
-import formatValue from '../../utils/formatValue';
 
-import { Container, CardContainer, Card, TableContainer } from './styles';
+
+
+
 
 interface Transaction {
   id: string;
@@ -35,7 +33,7 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     async function loadTransactions(): Promise<void> {
-      // TODO
+      // TODO:
     }
 
     loadTransactions();

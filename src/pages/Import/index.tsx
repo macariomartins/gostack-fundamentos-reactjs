@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-
-import filesize from 'filesize';
-
-import Header from '../../components/Header';
-import FileList from '../../components/FileList';
-import Upload from '../../components/Upload';
-
-import { Container, Title, ImportFileContainer, Footer } from './styles';
-
 import alert from '../../assets/alert.svg';
-import api from '../../services/api';
+import FileList from '../../components/FileList';
+import Header from '../../components/Header';
+import Upload from '../../components/Upload';
+import { Container, Footer, ImportFileContainer, Title } from './styles';
+
+
+
+
 
 interface FileProps {
   file: File;
@@ -25,7 +23,7 @@ const Import: React.FC = () => {
   async function handleUpload(): Promise<void> {
     // const data = new FormData();
 
-    // TODO
+    // TODO:
 
     try {
       // await api.post('/transactions/import', data);
@@ -35,7 +33,7 @@ const Import: React.FC = () => {
   }
 
   function submitFile(files: File[]): void {
-    // TODO
+    // TODO:
   }
 
   return (
